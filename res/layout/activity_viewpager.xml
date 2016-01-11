@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="后退"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_app_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="百度手机助手"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_icon_url"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_launcher" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_app_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="百度手机助手"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_developer_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7.56M|百度手机有限公司"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/pager_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:clipChildren="false"
+                android:layerType="software" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="200dp"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center"
+                    android:clipChildren="false" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="应用描述"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_app_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="应用描述"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更新日志"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_update_info1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更新1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_update_info2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更新2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_update_info3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更新3"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_update_info4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更新4"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_update_info5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更新5"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_update_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更新时间"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_app_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="版本"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
