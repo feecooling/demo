@@ -48,7 +48,7 @@ public class GetMobileInfo
 		info.setMobile_model(getMobile_model(context));
 		info.setOperating_system_version(getOperating_system_version(context));
 
-		info.setChannel_id("12");
+		info.setChannel_id("10");
 		info.setLocation_latitude("112.03");
 		info.setLocation_longitude("12.06");
 		return info;
